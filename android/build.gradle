@@ -2,7 +2,6 @@ group 'pushnotification.push_notification'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    namespace "pushnotification.push_notification"
     ext.kotlin_version = '1.6.10'
     repositories {
         google()
