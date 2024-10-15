@@ -57,15 +57,14 @@ private fun NotificationCompat.Builder.applyLargeIcon(imageUrl: String?): Notifi
             val bitmap = getBitmapFromURL(imageUrl)
             if (bitmap != null) {
                 val bigPictureStyle = NotificationCompat.BigPictureStyle()
-                        .bigPicture(bitmap)
-                        .bigLargeIcon(bitmap)
+                    .bigPicture(bitmap)
+                    .bigLargeIcon(bitmap)
                 setStyle(bigPictureStyle)
                 setLargeIcon(bitmap)
             }
         } catch (e: Exception) {
-            print("Error while downloading image")
+            print("Error while downloading image: ${e.message}")
         }
-
     }
 }
 
