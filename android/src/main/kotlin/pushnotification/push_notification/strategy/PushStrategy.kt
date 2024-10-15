@@ -58,7 +58,7 @@ private fun NotificationCompat.Builder.applyLargeIcon(imageUrl: String?): Notifi
             if (bitmap != null) {
                 val bigPictureStyle = NotificationCompat.BigPictureStyle()
                         .bigPicture(bitmap)
-                        .bigLargeIcon(bitmap as Bitmap?)
+                        .bigLargeIcon(bitmap)
                 setStyle(bigPictureStyle)
                 setLargeIcon(bitmap)
             }
